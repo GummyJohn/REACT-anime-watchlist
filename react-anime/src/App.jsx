@@ -9,29 +9,15 @@ function App() {
   const [watchList, setWatchList] = useState([])
   const animeSearch = useRef(null);
   
-  const handleSubmit = async (event) => {
+ const handleSubmit = async (event) => {
     event.preventDefault();
     const search = animeSearch.current.value;
     
     const allAnimes = await fetchDataAll(search)
     const {data} = allAnimes;
     
-    const animesList = [];
-    for(let i = 0; i < data.length; i++){
-      let newAnime = {}
-      newAnime.id = parseInt(data[i]._id)
-      newAnime.title = data[i].title
-      newAnime.type = data[i].type
-      newAnime.genres = data[i].genres;
-      newAnime.image = data[i].image
-      newAnime.synopsis = data[i].synopsis
-      
-      animesList.push(newAnime);
-    }
+    setAnimes(data)
 
-    if(animesList.length === 0) alert('INVALID ANIME NAME')
-    
-    setAnimes(animesList)
     animeSearch.current.value = '';
   }
   
