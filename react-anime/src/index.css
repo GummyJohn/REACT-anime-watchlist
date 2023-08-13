@@ -75,10 +75,6 @@ body{
   align-items: center;
 }
 
-.invisible-display{
-  display: none;
-}
-
 .image{
   display: flex;
   justify-content: space-evenly;
@@ -107,6 +103,12 @@ body{
   padding: 1rem;
   border-radius: 1rem;
   margin: 1rem 0;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .item-image{
@@ -138,8 +140,4 @@ body{
 
 .watched:hover{
   transform: scale(1.2)
-}
-
-.hide{
-  display: none;
 }
