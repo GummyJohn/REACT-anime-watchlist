@@ -28,6 +28,8 @@ function App() {
       
       animesList.push(newAnime);
     }
+
+    if(animesList.length === 0) alert('INVALID ANIME NAME')
     
     setAnimes(animesList)
     animeSearch.current.value = '';
