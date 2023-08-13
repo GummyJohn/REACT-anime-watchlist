@@ -1,0 +1,145 @@
+:root{
+  --primary: #0275d8;
+  --danger: #d9534f;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.title-container{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 1.5rem; 
+}
+
+.inner-body{
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 1.7rem;
+}
+
+.search-bar{
+  padding: .5rem;
+  width: 80%;
+}
+
+.btn{
+  border: none;
+  border-radius: 1rem;
+  background: var(--primary);
+  color: white;
+  padding: .5rem 2rem;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.search-container{
+  width: 50%;
+}
+
+.watchlist{
+  width: 50%;
+}
+
+.watchlist-title{
+  text-align: center;
+}
+
+.single-container{
+  border: 1px solid var(--primary);
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: .5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible-display{
+  display: none;
+}
+
+.image{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.add-btn{
+  background: var(--primary);
+  color: white;
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.add-btn:hover{
+  transform: scale(1.5);
+}
+
+.item-anime-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--primary);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.item-image{
+  height: 220px;
+}
+
+.item-title{
+  width: 20%;
+}
+
+.item-anime-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  text-align: center;
+}
+
+.watched{
+  background: var(--danger);
+  color: white;
+  border: none;
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.watched:hover{
+  transform: scale(1.2)
+}
+
+.hide{
+  display: none;
+}
